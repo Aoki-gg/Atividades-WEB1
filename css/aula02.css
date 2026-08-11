@@ -1,0 +1,17 @@
+.tads {
+    color: red;
+}
+
+#inicio {
+    color: chocolate;
+    text-align: center;
+    font-size: 50px;
+}
+
+#ocarina {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-top: center;
+    margin-right: center;
+}
