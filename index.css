@@ -1,0 +1,7 @@
+.links:link{
+    color: blue;
+}
+
+.links:visited {
+    color:red;
+}
