@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Aula03</title>
+    <link rel="stylesheet" href="/css/aula03.css">
+</head>
+
+<body>
+    <h1 id="inicio">TABELAS E FORMULARIOS HTML</h1>
+    <hr>
+    <h2> Indíce da pagina</h2>
+    <ul>
+        <li>
+            <a href="/index.html">Pagina principal</a>
+        </li>
+        <li>
+            <a href="#tabela_normal">Tabela comum</a>
+        </li>
+        <li>
+            <a href="#tabela_colspan">Tabela com colspan</a>
+        </li>
+        <li>
+            <a href="#tabela_rowspan">Tabela com rowspan</a>
+        </li>
+        <li>
+            <a href="#formularios">Formularios</a>
+        </li>
+    </ul>
+    <hr>
+
+</body>
+
+<h2>TABELAS</h2>
+<p>Tabelas usam as tags TD para colunas, TR para linhas e TH o cabeçalho</p>
+<h3>Exemplo de tabela simples HTML</h3>
+
+<div id="tabela_normal">
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Joao</td>
+                <td>20</td>
+                <td>Paranaguá</td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>20</td>
+                <td>Curitiba</td>
+            </tr>
+
+            <tr>
+                <td>José</td>
+                <td>20</td>
+                <td>Araucaria</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h3>Exemplo Tabela com colspan html</h3>
+
+<div id="tabela_colspan">
+    <table border="2">
+        <thead>
+            <tr>
+                <th> Aluno</th>
+                <th> 1º Avaliação</th>
+                <th> 2º Avaliação</th>
+                <th> 3º Avaliação</th>
+                <th> Média</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td> João</td>
+                <td> 9</td>
+                <td> 9</td>
+                <td> 9</td>
+                <td> 9</td>
+            </tr>
+
+            <tr>
+                <td> Maria</td>
+                <td> 8</td>
+                <td> 8</td>
+                <td> 8</td>
+                <td> 8</td>
+            </tr>
+
+            <tr>
+                <td> José</td>
+                <td> 7</td>
+                <td> 7</td>
+                <td> 7</td>
+                <td> 7</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="4"> Média da turma </th>
+                <td> 8</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<h3>Exemplo Tabela com rowspan html</h3>
+
+<div id="tabela_rowspan">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Disciplina</th>
+                <th>Professor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>9:10</td>
+
+                <td rowspan="2">Desenvolvimento Web 1</td>
+                <td rowspan="2">Professor Everaldo</td>
+            </tr>
+
+            <tr>
+                <td>10:20</td>
+            </tr>
+
+            <tr>
+                <td>11:05</td>
+                <td rowspan="2">Desenvolvimento Web 1</td>
+                <td rowspan="2"> Professor Everaldo</td>
+            </tr>
+
+            <tr>
+                <td>11:55</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<hr>
+
+<div id="formularios">
+    <h2>FORMULARIOS</h2>
+    <p>Formularios sao usados para receber dados do usuario e serem salvos em algum lugar e usa a tag &lt;form &gt;</p>
+
+    <form action="script.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <p>
+                <label for="nome">Nome </label>
+                <input type="text" name="nome" placeholder="Digite seu nome">
+            </p>
+
+            <p>
+                <label for="idade">Idade </label>
+                <input type="age" name="idade" placeholder="Digite sua idade">
+            </p>
+
+            <p>
+                <label for="email">Email </label>
+                <input type="email" name="email" placeholder="Digite seu email">
+            </p>
+
+            <p>
+                <label for="telefone">Telefone </label>
+                <input type="number" name="telefone" placeholder="Digite seu telefone">
+            </p>
+
+            <p>
+                <label for="senha">Senha </label>
+                <input type="number" name="senha" placeholder="Escolha uma senha">
+            </p>
+
+            <p>
+                <label for="checkbox1">Lembrar-me </label>
+                <input type="checkbox" name="checkbox1">
+                <label for="checkbox2">Concordar com os termos de uso </label>
+                <input type="checkbox" name="checkbox2">
+            </p>
+
+            <p>
+                <input type="file" name="salvar_arquivo">
+            </p>
+            <p>
+                <input type="submit" name="exemplo" id="">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <p>
+                <label for="rua">Rua </label>
+                <input type="text" name="rua" placeholder="Digite o nome da sua rua">
+            </p>
+
+            <p>
+                <label for="numero">Numero </label>
+                <input type="number" name="numero" placeholder="Digite o numero do seu endereço">
+            </p>
+
+            <p>
+                <label for="bairro">Bairro </label>
+                <input type="text" name="bairro" placeholder="Digite o nome do seu bairro">
+            </p>
+
+            <p>
+                <label for="cep">CEP </label>
+                <input type="number" name="cep" placeholder="Digite o seu CEP">
+            </p>
+
+        </fieldset>
+    </form>
+
+</div>
+
+</body>
+
+</html>

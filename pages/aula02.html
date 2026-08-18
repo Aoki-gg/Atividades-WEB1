@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <H1 id="inicio">TABELAS HTML</H1>
+    <H1 id="inicio">TAGS E IMAGENS HTML</H1>
     <hr>
     <h2>Indice da pagina</h2>
     <ol>
@@ -20,27 +20,30 @@
             <a href="#tagshtml"> Outras tags </a>
         </li>
         <li>
-            <a href="#imagens"> Imagens em HTML  </a>
+            <a href="#imagens"> Imagens em HTML </a>
         </li>
         <li>
-            <a href="#tabelas">  </a>
+            <a href="#tabelas"> </a>
         </li>
     </ol>
 
     <hr>
-    
+
     <div id="secao1">
         <h2>Outras tags importantes HTML</h2>
         <ul id="tagshtml">
             <li>Elemento de bloco e de linha: De bloco começa em uma nova linha e de linha na mesma linha </li>
-            <li>TAG SPAN: Usada para formatar o elemento dentro dela sem dar significado semantico, é um elemento de linha</li>
+            <li>TAG SPAN: Usada para formatar o elemento dentro dela sem dar significado semantico, é um elemento de
+                linha</li>
             <li>TAG ADDRESS: Para fins de contato</li>
             <li>TAG DIV: serve para agrupar um conjunto de elemento para move-los juntos, é um elemento de bloco</li>
-            <li>TAG class: serve para identificar partes da pagina como iguais para formatação, ao mudar o estilo da tag todos os elementos que pertencem a ela mudam junto</li>
+            <li>TAG class: serve para identificar partes da pagina como iguais para formatação, ao mudar o estilo da tag
+                todos os elementos que pertencem a ela mudam junto</li>
             <li>TAG blockquote: é uma referencia, quotando o texto e referenciando ele, ou seja, onde encontrou</li>
         </ul>
-    
-        <h3>Exemplo tag span em conjunto com atributo class para criação de um conjunto de elementos para fins aplicação de CSS</h3>
+
+        <h3>Exemplo tag span em conjunto com atributo class para criação de um conjunto de elementos para fins aplicação
+            de CSS</h3>
         <span class="tads">TADS26</span>
         <span class="tads">TADS25</span>
 
@@ -48,38 +51,148 @@
         <blockquote cite="google.com.br"> Teste de blockquote</blockquote>
 
     </div>
-    
+
     <hr>
-    
+
     <div id="secao2">
         <h2 id="imagens">Imagens em html</h2>
-        
-        <p>Imagens em html usam a tag &lt;img&gt;, indicando o caminho, nome em caso de falha de carregamento e seu tamanho com width e height</p>
-        
+
+        <p>Imagens em html usam a tag &lt;img&gt;, indicando o caminho, nome em caso de falha de carregamento e seu
+            tamanho com width e height</p>
+
         <img src="/assets/img/ocarina.jpg" alt="ocarina" id="ocarina">
 
     </div>
 
-    <hr> 
+    <hr>
 
     <div id="secao3">
         <h2 id="tabelas">TABELAS</h2>
         <p>Tabelas usam as tags TD para colunas, TR para linhas e TH o cabeçalho</p>
-        <h3>Exemplo de tabela em html</h3>
+        <h3>Exemplo de tabela simples HTML</h3>
+
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Joao</td>
+                        <td>20</td>
+                        <td>Paranaguá</td>
+                    </tr>
+
+                    <tr>
+                        <td>Maria</td>
+                        <td>20</td>
+                        <td>Curitiba</td>
+                    </tr>
+
+                    <tr>
+                        <td>José</td>
+                        <td>20</td>
+                        <td>Araucaria</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h3>Exemplo Tabela com colspawn html</h3>
+
+        <div>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th> Aluno</th>
+                        <th> 1º Avaliação</th>
+                        <th> 2º Avaliação</th>
+                        <th> 3º Avaliação</th>
+                        <th> Média</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> João</td>
+                        <td> 9</td>
+                        <td> 9</td>
+                        <td> 9</td>
+                        <td> 9</td>
+                    </tr>
+
+                    <tr>
+                        <td> Maria</td>
+                        <td> 8</td>
+                        <td> 8</td>
+                        <td> 8</td>
+                        <td> 8</td>
+                    </tr>
+
+                    <tr>
+                        <td> José</td>
+                        <td> 7</td>
+                        <td> 7</td>
+                        <td> 7</td>
+                        <td> 7</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="4"> Média da turma </th>
+                        <td> 8</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <hr>
+
+        <h3>Exemplo Tabela com rowspawn html</h3>
+
         <table border="1">
-            <tr>
-                <th> Nome</th>
-                <th> Idade</th>
-                <th> Cidade</th>
-            </tr>
-            <tr>
-                <td> João</td>
-                <td> 20</td>
-                <td> Paranaguá</td>
-            </tr>
-            
+            <thead>
+                <tr>
+                    <th>Horário</th>
+                    <th>Disciplina</th>
+                    <th>Professor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>9:10</td>
+
+                    <td rowspan="2">Desenvolvimento Web 1</td>
+                    <td rowspan="2">Professor Everaldo</td>
+                </tr>
+
+                <tr>
+                    <td>10:20</td>
+                </tr>
+
+                <tr>
+                    <td>11:05</td>
+                    <td rowspan="2">Desenvolvimento Web 1</td>
+                    <td rowspan="2"> Professor Everaldo</td>
+                </tr>
+
+                <tr>
+                    <td>11:55</td>
+                </tr>
+            </tbody>
         </table>
-    </div>
 
 </body>
+
 </html>
