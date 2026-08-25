@@ -1,0 +1,16 @@
+.center-text {
+    text-align: center;
+    color: chocolate;
+}
+
+.center-text:hover {
+    text-align: center;
+    color: violet;
+}
+
+#mapaMenu {
+    position: relative;
+    left: 450px;
+    display: ;
+}
+
