@@ -15,3 +15,21 @@
     margin-top: center;
     margin-right: center;
 }
+
+.teste {
+    width: 50px;
+    height: 50px ;
+    
+}
+
+.n_tabelas {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#formatacao {
+    color: brown;
+}
