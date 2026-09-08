@@ -1,7 +1,12 @@
+.body-sobre main {
+    
+}
+
 header {
     color: red;
     text-align: center;
     padding: 20px;
+    background-color: gray;
 }
 
 nav {
@@ -29,6 +34,7 @@ main section figure {
     border: 1px solid black;
     border-radius: 10px;
     margin: 20px;
+    background-color: white;
 }
 
 main section figure img {
@@ -36,12 +42,19 @@ main section figure img {
     height: 280px;
 }
 
-main form {
+main section form {
     padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
     width: 450px;
     height: 400px;
+    position: relative;
+    background-color: aqua;  
+    left: 650px;
+}
+
+.text-active:focus {
+    background: yellow;
 }
 
 main form legend {
@@ -59,3 +72,13 @@ footer p {
     color: aqua;
     text-align: center;
 }
+
+#testeee {
+    font-size: 50px;
+}
+#testeee:hover {
+    position: relative;
+    left: 600px;
+    font-size: 50px;
+}
+
