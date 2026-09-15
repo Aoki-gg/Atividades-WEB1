@@ -11,3 +11,97 @@ header h1{
 main section p{
     font-size: 25px;
 }
+
+main{
+    width: 2000px;
+    height: 2000px;
+}
+
+.container {
+    position:relative;
+    height: 400px;
+    width: 400px;
+    top: 500px
+}
+.container .static{
+    background-color: blue;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    position: static;
+    z-index: 1;
+}
+
+.container .relative{
+    background-color: chocolate;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 20px;
+
+}
+
+/* .container .absolute{
+    background-color: chartreuse;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+} */
+
+.fixed{
+    background-color: brown;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky{
+    background-color: aquamarine;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    position: sticky;
+    bottom: 500px;
+    z-index: 2;
+}
+
+.container .z-index{
+    background-color: blueviolet;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.divabsolute{
+    height: 200px;
+    width: 200px;
+    position:relative;
+    background-color: brown;
+    left:20px;
+    top: 200px;
+}
+
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: cyan;
+    left: 50px;
+    top: 50px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.divabsolute p{
+    position: absolute;
+    top: 75px;
+    left: 72px;
+}
