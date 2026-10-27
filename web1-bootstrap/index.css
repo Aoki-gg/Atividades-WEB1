@@ -1,0 +1,14 @@
+#carouselStacked{
+    height: 300px;
+    width: 200px;
+    left: 800px;
+}
+
+div img{
+    height: 200px;
+    width: 50px;
+}
+
+div.row div.col-md-4{
+    border: 1px solid red;
+}
